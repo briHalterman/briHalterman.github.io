@@ -13,7 +13,7 @@ footer.appendChild(copyRight);
 
 const skillsSection = document.getElementById(`skills`);
 const skillList = skillsSection.querySelector('ul');
-const skills = [`Mental Health First Aid`, `Administration`, `Microsoft Word`, `Microsoft Excel`, 'CSS', 'HTML', 'JS'];
+const skills = [`Node.js (Express)`, `React`, `JavaScript`, `HTML/CSS`, 'MongoDB', 'Ruby on Rails', 'SQL and relational databases'];
 
 for ( let i = 0; i < skills.length; i ++ ) {
   var item = document.createElement('li');
