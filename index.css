@@ -26,7 +26,10 @@ ul {
 }
 
 #projectList {
-    padding-left: 40px;
+    padding-left: 0; /* Remove default padding */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display projects in 2 columns */
+    gap: 20px; /* Add gap between projects */
 }
 
 #social_media {
@@ -73,7 +76,7 @@ header {
     width: 100%;
     margin-bottom: 30px;
     background-color: #FFFFFF; /* Match header background color with body */
-    padding: 0 10%; /* Add padding to the header */
+    padding: 0 10%; 
     box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
@@ -124,6 +127,10 @@ h2 {
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
+}
+
+#connect {
+    margin-bottom: 20px; /* Adjust margin to reduce white space */
 }
 
 #connect p {
