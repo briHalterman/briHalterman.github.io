@@ -13,7 +13,7 @@ footer.appendChild(copyRight);
 
 const skillsSection = document.getElementById(`skills`);
 const skillList = skillsSection.querySelector('ul');
-const skills = [`Node.js (Express)`, `React`, `JavaScript`, `HTML/CSS`, 'MongoDB', 'Ruby on Rails', 'SQL and relational databases'];
+const skills = [`Node.js (Express)`, `REST APIs`, `JavaScript`, `HTML/CSS`, 'Git & GitHub', 'MongoDB & Mongoose ODM', 'Postman', 'Mocha & Chai', 'Agile & Scrum', 'Kanban & Trello'];
 
 for ( let i = 0; i < skills.length; i ++ ) {
   var item = document.createElement('li');
@@ -54,10 +54,10 @@ if(messageForm) {
     messageEmail.textContent = name.value;
     messageEmail.href = `mailto:${email.value}`;
     messageParagraph.textContent = ` wrote: ${textarea.value}`;
-    newMessage.appendChild(messageParagraph);  
-    messageParagraph.prepend(messageEmail); 
+    newMessage.appendChild(messageParagraph);
+    messageParagraph.prepend(messageEmail);
     //newMessage.innerHTML = `<a href=mailto:${email.value}>${name.value}</a> wrote: <span style="margin-right:10px">${textarea.value}</span>`;
-    
+
     const removeButton = document.createElement("button");
     removeButton.classList.add("button");
     removeButton.textContent = "remove";
@@ -70,10 +70,10 @@ if(messageForm) {
         messageSection.remove();
       }
     });
-    
+
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-    
+
     messageForm.reset();
   });
 };
